@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: black;
+  text-decoration: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  background: #ffffff;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.red-button {
+  border: 1px solid inherit;
+  border-radius: 12px;
+  color: #ffffff;
+
+  background: linear-gradient(34deg, red 30%, rgb(248, 101, 101) 70%);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button {
+  border: 1px solid inherit;
+  border-radius: 6px;
+  color: #ffffff;
+
+  background: linear-gradient(34deg, #3ca060 30%, #3ca060 70%);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border: 1px solid blue;
+  background: #3ca0602b;
+  color: black;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
