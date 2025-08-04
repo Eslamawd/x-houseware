@@ -59,7 +59,9 @@ function Categories() {
         <>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {categories.map((category, i) => (
-              <CategoryCard key={category.id} category={category} index={i} />
+              <Link to={`/categories/${category.id}`} key={i}>
+                <CategoryCard key={category.id} category={category} index={i} />
+              </Link>
             ))}
           </div>
 
