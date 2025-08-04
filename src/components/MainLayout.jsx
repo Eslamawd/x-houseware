@@ -66,7 +66,7 @@ const MainLayout = ({ children, showFooter = true }) => {
           <LucideDivideSquare className="inline w-5 h-5 mr-2  text-green-700 ml-1" />
           All Offers
         </h3>
-        <h3 className="text-muted-foreground hover:text-primary transition-colors">
+        <h3 className="text-muted-foreground hidden md:block hover:text-primary transition-colors">
           <TruckElectric className="inline  text-green-700 w-5 h-5 mr-2  ml-1" />
           Track your order
         </h3>
@@ -79,6 +79,7 @@ const MainLayout = ({ children, showFooter = true }) => {
       {/* Header */}
       <Header />
 
+      {/* Header 
       <div className=" hidden md:flex flex-row justify-center h-3.5 items-center   mt-1  p-4">
         {categories?.map((cat) => (
           <Link to={`categories/${cat.id}`} key={cat.id}>
@@ -93,6 +94,7 @@ const MainLayout = ({ children, showFooter = true }) => {
           <ChevronDown className="inline h-5 w-5 text-green-700 ml-2" />
         </div>
       </div>
+      */}
 
       {/* Main Content with top padding for header */}
       <main className="flex-grow pt-20 pb-16 md:pb-0">

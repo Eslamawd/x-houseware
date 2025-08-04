@@ -1,5 +1,13 @@
 import { useState } from "react";
-import { Heart, ShoppingCart, Menu, Search, LogOut, X } from "lucide-react";
+import {
+  Heart,
+  ShoppingCart,
+  Menu,
+  Search,
+  LogOut,
+  X,
+  Captions,
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "../context/CartContext";
 import { Link } from "react-router-dom";
@@ -96,17 +104,23 @@ export default function Header() {
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
               exit={{ x: "-100%" }}
-              transition={{ duration: 0.4 }}
-              className="fixed top-0 left-0 h-full w-2/3 bg-black shadow-md p-6 z-50 md:hidden flex flex-col gap-4"
+              transition={{ duration: 0.7 }}
+              className="fixed top-0 left-0 h-full w-2/3 bg-white shadow-md p-6 z-50 md:hidden flex flex-col gap-4"
             >
               <button className="flex items-center gap-2">
-                <Heart /> Wishlist
+                <Link to="/checkout">
+                  <Heart /> Wishlist
+                </Link>
               </button>
               <button className="flex items-center gap-2">
-                <ShoppingCart /> Cart
+                <Link to="/checkout">
+                  <ShoppingCart /> Cart
+                </Link>
               </button>
               <button className="flex items-center gap-2">
-                <LogOut /> Logout
+                <Link to="/categories">
+                  <Captions /> Categories
+                </Link>
               </button>
             </motion.div>
 
