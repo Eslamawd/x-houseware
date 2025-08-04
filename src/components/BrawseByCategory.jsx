@@ -109,6 +109,14 @@ function BrowseByCategory() {
           </Link>
         ))}
       </div>
+      <div className="text-center mt-8">
+        <Link
+          to="/categories"
+          className="bg-green-500 text-white py-2 px-6 text-sm sm:text-base rounded-md hover:bg-green-600 transition-colors font-semibold"
+        >
+          View All Categories
+        </Link>
+      </div>
     </div>
   );
 }
