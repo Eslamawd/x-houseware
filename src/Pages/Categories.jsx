@@ -5,6 +5,7 @@ import Pagination from "../components/Pagination";
 import { toast } from "sonner";
 import { loadCategory } from "../lib/categoryApi";
 import { Loader2 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 function Categories() {
   const [categories, setCategories] = useState([]);
